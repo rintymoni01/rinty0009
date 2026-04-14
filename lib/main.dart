@@ -143,8 +143,19 @@ class SoftwareCompanyPage extends StatelessWidget {
               width: double.infinity,
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: Colors.black,
-                borderRadius: BorderRadius.circular(16),
+                gradient: const LinearGradient(
+                  colors: [Color(0xFF232526), Color(0xFF414345)],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.5),
+                    blurRadius: 10,
+                    offset: const Offset(0, 5),
+                  ),
+                ],
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -161,11 +172,11 @@ class SoftwareCompanyPage extends StatelessWidget {
                   const SizedBox(height: 8),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(8),
-                    child: LinearProgressIndicator(
+                    child: const LinearProgressIndicator(
                       value: 0.53,
-                      minHeight: 8,
-                      backgroundColor: Colors.grey,
-                      color: Colors.blueAccent,
+                      minHeight: 10,
+                      backgroundColor: Colors.black38,
+                      valueColor: AlwaysStoppedAnimation<Color>(Colors.greenAccent),
                     ),
                   ),
                   const SizedBox(height: 8),
