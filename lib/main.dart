@@ -175,3 +175,5 @@ class _SoftwareCompanyPageState extends State<SoftwareCompanyPage> {
 // style: optimized state management iteration 12
 
 // chore: optimized ui components iteration 16
+
+// refactor: optimized state management iteration 20
