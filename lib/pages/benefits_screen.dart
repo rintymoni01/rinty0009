@@ -35,6 +35,11 @@ class BenefitsScreen extends StatelessWidget {
             "End-to-end encryption to keep your data safe.",
             Icons.security,
           ),
+          _buildBenefitCard(
+            "No Ads Experience",
+            "Enjoy a seamless experience without any ads.",
+            Icons.block,
+          ),
         ],
       ),
     );
