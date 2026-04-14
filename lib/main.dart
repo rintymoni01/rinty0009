@@ -45,7 +45,11 @@ class _SoftwareCompanyPageState extends State<SoftwareCompanyPage> {
           padding: EdgeInsets.zero,
           children: [
             const DrawerHeader(
-              decoration: BoxDecoration(color: Colors.black),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Color(0xFF1E1E1E), Color(0xFF121212)],
+                ),
+              ),
               child: Align(
                 alignment: Alignment.bottomLeft,
                 child: Text(
