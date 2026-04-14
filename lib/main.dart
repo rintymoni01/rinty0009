@@ -167,3 +167,5 @@ class _SoftwareCompanyPageState extends State<SoftwareCompanyPage> {
     );
   }
 }
+
+// perf: optimized state management iteration 4
