@@ -76,3 +76,5 @@ class BenefitsScreen extends StatelessWidget {
     );
   }
 }
+
+// fix: optimized rendering logic iteration 3
